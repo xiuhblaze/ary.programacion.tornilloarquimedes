@@ -1,11 +1,11 @@
-const header = (titulo, subtitulo) => {
+const header = (titulo, subtitulo) => {    
     const contenidoHTML = `<div class="page-header min-vh-75 relative" style="background-image: url('/img/hoja-antigua.jpg');">
         <span class="mask bg-gradient-warning opacity-4"></span>
         <div class="container">
             <div class="row">
             <div class="col-lg-7 text-center mx-auto">
-                <h1 class="text-white pt-3 mt-n5">${titulo}</h1>
-                <p class="lead text-white mt-3">${subtitulo}</p>
+                <h1 class="text-white pt-3 mt-n5">${ !!titulo ? titulo : '(falta el título)'}</h1>
+                <p class="lead text-white mt-3">${!!subtitulo ? subtitulo : '(falta el subtitulo)'}</p>
             </div>
             </div>
         </div>
